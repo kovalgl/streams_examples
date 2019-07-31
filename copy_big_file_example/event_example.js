@@ -12,5 +12,5 @@ sourceFileReadStream.on('data', (chunk) => {
 });
 
 sourceFileReadStream.on('end', () => {
-    destinationFile.end();
+    destinationFileWriteStream.end();
 });
